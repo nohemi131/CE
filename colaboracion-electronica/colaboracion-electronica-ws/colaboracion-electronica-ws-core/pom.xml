@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.gs.ce</groupId>
+    <artifactId>colaboracion-electronica-ws</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>colaboracion-electronica-ws-core</artifactId>
+  <packaging>pom</packaging>
+  <dependencies>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+	    
+		<!-- ojdbc7.jar example -->
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc7</artifactId>
+			<version>${ojdbc.version}</version>
+		</dependency>
+	</dependencies>
+  <modules>
+    <module>colaboracion-electronica-ws-core-presentation-layer</module>
+    <module>colaboracion-electronica-ws-core-business-layer</module>
+    <module>colaboracion-electronica-ws-core-business-interfaces</module>
+    <module>colaboracion-electronica-ws-core-data-layer</module>
+    <module>colaboracion-electronica-ws-core-data-interfaces</module>
+    <module>colaboracion-electronica-ws-core-services-client</module>
+  </modules>
+</project>
