@@ -30,19 +30,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetToken }
+     * Create an instance of {@link Recibepeticion }
      * 
      */
-    public GetToken createGetToken() {
-        return new GetToken();
+    public Recibepeticion createRecibepeticion() {
+        return new Recibepeticion();
     }
 
     /**
-     * Create an instance of {@link GetTokenResponse }
+     * Create an instance of {@link RecibepeticionResponse }
      * 
      */
-    public GetTokenResponse createGetTokenResponse() {
-        return new GetTokenResponse();
+    public RecibepeticionResponse createRecibepeticionResponse() {
+        return new RecibepeticionResponse();
     }
 
     /**
